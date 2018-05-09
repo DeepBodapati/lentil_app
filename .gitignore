@@ -1,0 +1,11 @@
+*.pyc
+*.log
+*.jpg
+backup/
+data/
+models/
+kaggle/
+imgs/
+img_prep/
+.ipynb_checkpoints/
+*.npy

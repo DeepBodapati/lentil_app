@@ -1,0 +1,29 @@
+#define CUDNN_MAJOR 7
+#define CUDNN_MINOR 1
+#define CUDNN_PATCHLEVEL 2
+--
+#define CUDNN_VERSION    (CUDNN_MAJOR * 1000 + CUDNN_MINOR * 100 + CUDNN_PATCHLEVEL)
+
+#include "driver_types.h"
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2017 NVIDIA Corporation
+Built on Fri_Nov__3_21:07:56_CDT_2017
+Cuda compilation tools, release 9.1, V9.1.85
+Fri May  4 15:25:48 2018       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 390.48                 Driver Version: 390.48                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Quadro P4000        Off  | 00000000:00:05.0  On |                  N/A |
+| 46%   30C    P8     6W / 105W |    259MiB /  8119MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|    0      2625      G   /usr/lib/xorg/Xorg                           140MiB |
+|    0      2944      G   /usr/bin/gnome-shell                         106MiB |
++-----------------------------------------------------------------------------+
