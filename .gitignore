@@ -4,6 +4,7 @@
 backup/
 data/
 models/
+weights_backup/
 kaggle/
 imgs/
 img_prep/
