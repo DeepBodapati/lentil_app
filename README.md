@@ -43,4 +43,4 @@ I personally prefer virtualenv (and virtualenvwrapper) but since the machine com
 6. Run the `prep_data_for_DL-ebay-only.ipynb` notebook to separate into training and validation data
 
 ## Train the model 
-1. Run one of the **fine tuning** model notebooks (e.g., `Xception_fine_tuning.ipynb` or `Mobilenet_fine_tuning.ipynb`) to train model with transfer learning / fine tuning
+1. Run one of the **fine tuning** model notebooks (e.g., `Xception_fine_tuning.ipynb` or `Mobilenet_fine_tuning.ipynb`) to train via transfer-learning and / or fine-tuning
