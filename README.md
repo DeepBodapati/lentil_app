@@ -1,4 +1,4 @@
-# Setting up the machine + virtual environment
+# Quick steps
 
 ## Create a new server
 These instructions are for Paperspace. You could use AWS as well, but [Paperspace offers better value for money](https://medium.com/initialized-capital/benchmarking-tensorflow-performance-and-cost-across-different-gpu-options-69bd85fe5d58) at this point in time.
@@ -43,4 +43,4 @@ I personally prefer virtualenv (and virtualenvwrapper) but since the machine com
 6. Run the `prep_data_for_DL-ebay-only.ipynb` notebook to separate into training and validation data
 
 ## Train the model 
-1. Run `Xception_fine_tuning.ipynb` notebook to train model
+1. Run one of the **fine tuning** model notebooks (e.g., `Xception_fine_tuning.ipynb` or `Mobilenet_fine_tuning.ipynb`) to train model with transfer learning / fine tuning
