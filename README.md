@@ -33,13 +33,12 @@ I personally prefer virtualenv (and virtualenvwrapper) but since the machine com
 1. Install aws cli with `$ pip install awscli` and configure with `$ aws configure`
 2. Create directories `$ mkdir WIP && mkdir WIP/180503_lentil_app && mkdir WIP/180503_lentil_app/imgs cd WIP/180503_lentil_app/`
 3. Clone git repo `$ git clone https://github.com/DeepBodapati/lentil_app.git .`
-4. Copy all the S3 files 
-    `$ aws s3 cp s3://lentil-imgs/src_imgs_from_eBay.zip imgs/ && aws s3 cp s3://lentil-imgs/src_imgs_from_home.zip imgs/ && aws s3 cp s3://lentil-imgs/test_imgs_from_DeeAnna.zip imgs/`
+4. Copy from S3
+    `$ aws s3 cp s3://lentil-imgs/src_imgs.zip imgs/ && aws s3 cp s3://lentil-imgs/test_imgs.zip imgs/`
 5. Unzip all the downloaded S3 files:
     * `$ cd imgs/`
-    * `$ unzip src_imgs_from_eBay.zip && mv imgs/ src/`
-    * `$ unzip src_imgs_from_home.zip && rsync -a imgs_from_home/ src/ && rm -rf imgs_from_home`
-    * `$ unzip test_imgs_from_DeeAnna.zip -d test/`
+    * `$ unzip src_imgs.zip && mv imgs/ src/`
+    * `$ unzip test_imgs.zip -d test/`
 6. Run the `prep_data_for_DL-ebay-only.ipynb` notebook to separate into training and validation data
 
 ## Train the model 
